@@ -22,7 +22,7 @@ The project has three main goals:
 The required data model is a star-schema comprised by one fact table, songplays, which records the songs played by users, along with four dimensions, users, songs, artists and finally, time.
 
 
-![star schema](images/star_schema.png)
+![star schema](./images/star_schema.png)
 
 Notice how the song dimension is actually dependent on the artist dimension. In a typical star-schema, this would not be allowed, resembling instead a snowflake model. However, this relation is merely set to enforce data quality, not to create a snowflake model.
 
