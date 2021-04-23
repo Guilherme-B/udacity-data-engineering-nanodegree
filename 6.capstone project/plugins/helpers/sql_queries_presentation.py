@@ -143,17 +143,20 @@ dimension_definitions: Dict[str, Dict[str, str]] = {
     'presentation_dim_broker': {
         'target_table': 'dim_broker',
         'base_table': 'dim_broker',
-        'match_columns': ['broker']
+        'match_columns': ['broker'],
+        'identification_columns': ['broker_name'],
     },
     'presentation_dim_asset': {
         'target_table': 'dim_asset',
         'base_table': 'dim_asset',
-        'match_columns': ['contract_number']
+        'match_columns': ['contract_number'],
+        'identification_columns': ['contract_number'],
     },
     'presentation_dim_geography': {
         'target_table': 'dim_geography',
         'base_table': 'dim_geography',
-        'match_columns': ['country','county', 'parish']
+        'match_columns': ['country','county', 'parish'],
+        'identification_columns': ['country','county', 'parish'],
     },
 }
 
